@@ -6,7 +6,7 @@ body {
 }
 a {
 text-decoration: none;
-color: #333;
+color: #444;
 }
 img {
 max-width: 100%;
@@ -68,7 +68,7 @@ height: auto;
 
   background-size: cover;
   background-position: center;
-  position: absolute;
+  position: relative;
 }
 .fv-txt {
   position: relative;
@@ -77,7 +77,6 @@ height: auto;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 0.25em;
-  color: #444;
   width: 102px;
   height: 565px;
   align-items: center;
@@ -96,5 +95,62 @@ height: auto;
   color: #21A937;
 }
 /* -------------------------fv------------------------> */
+/* <-------------------------clinic-desc------------------------ */
 
+.clinic-desc {
+  height: auto;
+  position: relative;
+  display: flex; 
+  justify-content: center;
+}
+.clinic-desc-inner {
+  max-width: 1180px;
+  margin: 0px, auto;
+  display: flex;
+}
+.clinic-desc-inner-txt {
+  margin: 193px 42px 180px 33px;
+}
+.underline {
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration-color: #99E5A5;
+  text-decoration-line: underline;
+  text-decoration-thickness: 10px;
+  text-underline-offset: -3px;
+  text-decoration-skip-ink: none;
+}
+.underline.clinic-desc{
+  margin-bottom: 32px;
+}
+.clinic-desc-inner-txt p {
+  font-size: 16px;
+  line-height: 38.4px;
+  margin-top: 5px;
+}
+.clinic-desc-inner img {
+  width: 690px;
+  height: 420px;
+  margin: 162px 0px 82px 0px;
+}
+/* -------------------------clinic-desc------------------------> */
+
+/* <-------------------------contents------------------------ */
+.contents {
+  height: auto;
+  background: #F5FCF8;
+  display: flex;
+  justify-content: center;
+}
+.contents-inner {
+  max-width: 1180px;
+}
+.underline.sub-ttl-01 {
+  margin: 78px 542px 70px 542px;
+}
+.treatment-detail {
+
+}
+
+/* -------------------------contents------------------------> */
 /* -------------------------main------------------------> */
