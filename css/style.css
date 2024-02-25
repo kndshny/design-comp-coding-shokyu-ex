@@ -31,29 +31,28 @@ height: auto;
 .header-logo h1 a img {
   margin: 29px 0 28px 0;
   }
-.header-nav-list-wrapper {
+.header-list-wrapper {
   display: flex;
   flex-direction: column;
   text-align: right;
   margin: 33px 0 35px 0;
 }
-.header-nav-list-business-hours {
+.header-list-business-hours {
   font-size: 14px;
   margin-bottom: 7px;
 }
-.header-nav-list-tel {
+.header-list-tel {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   text-align: right;
 }
-.header-nav-list-tel img {
-  margin: 6px 5px 4px 0;
-}
-.header-nav-list-tel p{
+.header-list-tel p{
   font-weight: 700;
   font-size: 24px;
   color: #21A937;
+  margin-left:5px;
+  padding: 6px 0 4px 0;
 }
 /* -------------------------header------------------------> */
 
@@ -66,7 +65,6 @@ height: auto;
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
-
   background-size: cover;
   background-position: center;
   position: relative;
@@ -96,8 +94,8 @@ height: auto;
   color: #21A937;
 }
 /* -------------------------fv------------------------> */
-/* <-------------------------clinic-desc------------------------ */
 
+/* <-------------------------clinic-desc------------------------ */
 .clinic-desc {
   height: auto;
   position: relative;
@@ -113,15 +111,24 @@ height: auto;
   margin: 193px 42px 180px 33px;
 }
 .underline {
-  font-weight: 700;
-  font-size: 24px;
   text-decoration-color: #99E5A5;
   text-decoration-line: underline;
-  text-decoration-thickness: 10px;
-  text-underline-offset: -3px;
   text-decoration-skip-ink: none;
 }
-.underline.clinic-desc{
+.underline.h {
+  font-weight: 700;
+  font-size: 24px;
+  text-underline-offset: -3px;
+  text-decoration-thickness: 10px;
+}
+.underline.p {
+  font-weight: 400;
+  font-size: 14px;
+  text-underline-offset: -0.75px;
+  text-decoration-thickness: 3px;
+}
+.underline.h.clinic-desc{
+  justify-content: flex-start;
   margin-bottom: 32px;
 }
 .clinic-desc-inner-txt p {
@@ -147,7 +154,7 @@ height: auto;
   max-width: 1180px;
   padding: 78px 0 113px 0;
 }
-.underline.sub-ttl-01 {
+.underline.h.sub-ttl-01 {
   display: flex;
   justify-content: center;
   margin: 0 0 70px 0;
@@ -192,7 +199,7 @@ height: auto;
   align-self: center; /* 画像をコンテナの中央に配置 */
   margin-top: auto; /* 画像を下に押し下げる */
 }
-.underline.sub-ttl-02 {
+.underline.h.sub-ttl-02 {
   display: flex;
   justify-content: center;
   margin: 82px 0 70px 0;
@@ -214,8 +221,7 @@ height: auto;
 .news-list-item {
   display: flex;
   justify-content: left;
-  /* align-items: baseline; */
-  /* text-align: center; */
+  align-items: center;
   border-bottom: 2px solid #E7E7E7;
 }
 .news-list-item time {
@@ -258,6 +264,7 @@ height: auto;
 }
 /* -------------------------contents------------------------> */
 /* -------------------------main------------------------> */
+
 /* <-------------------------footer----------------------- */
 .footer {
   height: auto;
@@ -266,8 +273,97 @@ height: auto;
   justify-content: center;
 }
 .footer-inner {
+  display: flex;
+  flex-direction: column;
   max-width: 1180px;
-  padding: 78px 0 113px 0;
+  padding: 196px 0 139px 0;
 }
-
+.footer-inner-top {
+  display: flex;
+}
+.footer-inner-left-pc {
+  margin: 0 34px 0 1px;
+}
+.footer-inner-right-pc {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo h1 a img {
+  justify-content: flex-start;
+}
+.address-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 52px;
+}
+.post-code {
+  margin-right: 16px;
+}
+.footer-tel {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 25px;
+}
+.footer-tel p{
+  font-weight: 700;
+  font-size: 24px;
+  color: #21A937;
+  align-items: center;
+  margin-left:5px;
+  padding: 7px 0 3px 0;
+}
+.schedule-wrapper {
+  font-size: 14px;
+  margin: 28px 0 22px 4px;
+  padding: 19px 0 18px 0;
+  border-top: 2px solid #E7E7E7;
+  border-bottom: 2px solid #E7E7E7;
+}
+.schedule-open {
+  display: flex;
+  margin-bottom: 29px;
+}
+.schedule-open-ttl {
+  display: flex;
+  padding: 3px 28px 0 0;
+  border-right: 2px solid #E7E7E7;
+}
+.schedule-open-list {
+  padding: 3px 0 6px 0;
+}
+.schedule-open-desc {
+  display: flex;
+  margin-bottom: 13px;
+}
+.schedule-open-desc:last-child {
+  margin-bottom: initial;
+}
+.underline.p.schedule-open-day-of-week {
+  margin-left: 28px;
+}
+.schedule-open-am {
+  margin-left: 23px;
+}
+.schedule-open-pm {
+  margin-left: 17px;
+}
+.schedule-close {
+  display: flex;
+}
+.schedule-close-ttl {
+  padding: 5px 42px 0 0;
+  border-right: 2px solid #E7E7E7;
+}
+.schedule-close-day-of-week {
+  padding: 5px 0 4px 0;
+  margin-left: 28px;
+}
+.footer-inner-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.copyright {
+  font-size: small;
+}
 /* ------------------------footer------------------------> */
